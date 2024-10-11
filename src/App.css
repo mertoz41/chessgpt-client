@@ -6,6 +6,61 @@
   height: 40vmin;
   pointer-events: none;
 }
+.chessboard {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.highlighted {
+  background-color: yellow;
+}
+
+.piece {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.black .piece {
+  color: white;
+}
+
+.position {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.white .position {
+  color: rgba(0, 0, 0, 0.7);
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
